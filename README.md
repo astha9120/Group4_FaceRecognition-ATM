@@ -14,7 +14,7 @@
 
 #6. Vatsal Gujarati - 201801162
 
-#7.
+#7. Smit Visat - 201801239
 
 #8.
 
