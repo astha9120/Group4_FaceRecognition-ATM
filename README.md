@@ -12,7 +12,7 @@
 
 #5. Shivam Bodiwala - 201801111
 
-#6.
+#6. Vatsal Gujarati - 201801162
 
 #7.
 
