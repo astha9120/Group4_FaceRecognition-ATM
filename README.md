@@ -47,9 +47,9 @@
 
 **Languages:**
 
-Html , css : Vatsal , Vanshika , Parth 
+Html , css , JS : Vatsal , Vanshika , Parth 
 
-mongo db , JS : Vyom  , Astha , Shubham
+mongo db , node JS : Vyom  , Astha , Shubham
 
 ML : Prit , Shivam , Smit , Dhruvil
 
