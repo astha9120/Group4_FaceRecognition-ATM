@@ -4,7 +4,7 @@
 
 #1. Astha Shah - 201801169
 
-#2.
+#2. Preet Amin - 201801051
 
 #3. Parthraj Chauhan - 201801208
 
@@ -51,6 +51,6 @@ Html , css , JS : Vatsal , Vanshika , Parth
 
 mongo db , node JS : Vyom  , Astha , Shubham
 
-ML : Prit , Shivam , Smit , Dhruvil
+ML : Preet , Shivam , Smit , Dhruvil
 
 
