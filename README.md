@@ -30,6 +30,8 @@
  Shubham: Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
  
  Dhruvil : Tutorials of Tensorflow
+ 
+ Shivam : Tutorials of Convolutional Neural Network (CNN)
 
 **meet 2 : 1/2/2020**
 
