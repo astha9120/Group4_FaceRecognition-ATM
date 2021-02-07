@@ -18,7 +18,7 @@
 
 #8. Vanshika Kochhar - 201801104
 
-#9. 
+#9. Dhruvil Bhatt - 201801056
 
 #10. Vyom Saraf - 201801062
 
@@ -28,6 +28,8 @@
  Astha : basic curd operation in mongodb
  
  Shubham: Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
+ 
+ Dhruvil : Tutorials of Tensorflow
 
 **meet 2 : 1/2/2020**
 
