@@ -32,6 +32,8 @@
  Dhruvil : Tutorials of Tensorflow
  
  Shivam : Tutorials of Convolutional Neural Network (CNN)
+ 
+ Vatsal : Revised HTML and started learning CSS.
 
 **meet 2 : 1/2/2020**
 
