@@ -23,6 +23,10 @@
 #10. Vyom Saraf - 201801062
 
 
+**Progress** 
+
+ Astha : basic curd operation in mongodb
+
 **meet 2 : 1/2/2020**
 
 **Features : -**
@@ -53,4 +57,6 @@ mongo db , node JS : Vyom  , Astha , Shubham
 
 ML : Preet , Shivam , Smit , Dhruvil
 
+**meet 3: 6/2/2020**
 
+functional , nonfunctional , domain requirements
