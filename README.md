@@ -26,6 +26,8 @@
 **Progress** 
 
  Astha : basic curd operation in mongodb
+ 
+ Shubham: Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
 
 **meet 2 : 1/2/2020**
 
