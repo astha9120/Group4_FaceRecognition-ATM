@@ -34,6 +34,8 @@
  Shivam : Tutorials of Convolutional Neural Network (CNN)
  
  Vatsal : Revised HTML and started learning CSS.
+ 
+ Smit : Revised basics of Neural Networks and Tutorials of CNN(Neural Network).
 
 **meet 2 : 1/2/2020**
 
