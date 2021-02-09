@@ -36,6 +36,8 @@
  Vatsal : Revised HTML and started learning CSS.
  
  Smit : Revised basics of Neural Networks and Tutorials of CNN(Neural Network).
+ 
+ Parthraj : Learned basic HTML and Learning CSS.
 
 **meet 2 : 1/2/2020**
 
