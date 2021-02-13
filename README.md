@@ -27,6 +27,8 @@
 
  Astha : basic curd operation in mongodb
  
+         basics of nodejs - file and routing.
+ 
  Shubham: Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
  
  Dhruvil : Tutorials of Tensorflow
@@ -76,3 +78,7 @@ ML : Preet , Shivam , Smit , Dhruvil
 **meet 3: 6/2/2020**
 
 functional , nonfunctional , domain requirements
+
+**meet4: 13/2**
+
+concept map and use case diagram
