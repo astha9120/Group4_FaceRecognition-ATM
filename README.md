@@ -44,6 +44,8 @@
  Vanshika : Revised HTML, CSS, Javascript and added a few resources that would be helpful moving forward
  
  Vyom : Revised Basic Javascript as well as found resources for learning node.js and mongoDB.
+ 
+ Preet: Researched about different existing architectures related to face varification task.
 
 **meet 2 : 1/2/2020**
 
