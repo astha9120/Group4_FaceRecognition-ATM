@@ -38,6 +38,8 @@
  Smit : Revised basics of Neural Networks and Tutorials of CNN(Neural Network).
  
  Parthraj : Learned basic HTML and Learning CSS.
+ 
+ Vanshika : Revised HTML, CSS, Javascript and added a few resources that would be helpful moving forward
 
 **meet 2 : 1/2/2020**
 
