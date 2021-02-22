@@ -25,9 +25,10 @@
 
 **Progress** 
 
- Astha : basic curd operation in mongodb
+ Astha : 1. basic curd operation in mongodb
  
-         basics of nodejs - file and routing.
+        2. basics of nodejs - file and routing.
+        3. Terminology related to nodeJS - event , working of sites ..
  
  Shubham: Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
  
@@ -79,10 +80,18 @@ mongo db , node JS : Vyom  , Astha , Shubham
 
 ML : Preet , Shivam , Smit , Dhruvil
 
-**meet 3: 6/2/2020**
+**meet 3: 6/2/2021**
 
 functional , nonfunctional , domain requirements
 
-**meet4: 13/2**
+**meet4: 13/2/2021**
 
 concept map and use case diagram
+
+**meet5 :20/2/2021**
+
+made some modification in the requirements , concept map and use case diagram
+
+**meet6: 22/2/2021**
+
+user interface,open issues and objective of project
