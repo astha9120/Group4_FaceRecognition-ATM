@@ -31,6 +31,7 @@
         3. Terminology related to nodeJS - event , working of sites ..
  
  Shubham: 1. Revised basic HTML and CSS, Learned basic syntax of JavaScript, DOM, Manual Form validation through JavaScript
+        
         2. Basic tutorials of Nodejs - NPM, modules, routing
  
  Dhruvil : Tutorials of Tensorflow
