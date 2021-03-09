@@ -38,7 +38,7 @@
  
  Shivam : Tutorials of Convolutional Neural Network (CNN)
  
- Vatsal : Revised HTML and started learning CSS.
+ Vatsal : Revised HTML and Css and started learning javascript.
  
  Smit : Revised basics of Neural Networks and Tutorials of CNN(Neural Network).
  
@@ -50,7 +50,7 @@
  
  Preet: Researched about different existing architectures related to face varification task.
  
- Vatsal: Revised Css.
+ 
 
 **meet 2 : 1/2/2020**
 
