@@ -34,7 +34,7 @@
         
         2. Basic tutorials of Nodejs - NPM, modules, routing
  
- Dhruvil : Tutorials of Tensorflow
+ Dhruvil : Tutorials of Tensorflow, Implemented a Classification project using Tensor Flow and Keras Model. Understood how backpropagation, optimization and other functions in Tensor flow help in pre-processing and training the model. 
  
  Shivam : Tutorials of Convolutional Neural Network (CNN)
  
