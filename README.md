@@ -36,7 +36,7 @@
  
  Dhruvil : Tutorials of Tensorflow, Implemented a Classification project using Tensor Flow and Keras Model. Understood how backpropagation, optimization and other functions in Tensor flow help in pre-processing and training the model. 
  
- Shivam : Tutorials of Convolutional Neural Network (CNN)
+ Shivam : Tutorials of Convolutional Neural Network (CNN). Understood how to use Tensor Flow library by doing Iris classification project.
  
  Vatsal : Revised HTML and Css and started learning javascript.
  
