@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/profile.css" />
+    <link href="/assets/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="show">
+      <h1>
+        <b> Bank Name</b>
+      </h1>
+    </header>
+    <%- include('./partials/nav.ejs')%>
+
+    <% const day = profile.Dob.toLocaleDateString() %>
+  
+    <div class="container">
+      <div class="profileBox">
+        <div class="leftnav">
+          <nav class="sidebar">
+            <a onclick="tabs(0)" href="#" class="tab active">
+              <i class="fa fa-user"></i>
+            </a>
+            <a onclick="tabs(1)" href="#" class="tab">
+              <i class="fa fa-credit-card"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="rightbox">
+          <div class="profile tabShow">
+            <form action="/clients/profile" method="POST">
+            <h2>Personal Information</h2>
+            <h3>Full Name</h3>
+            <input type="text" class="input" id="name" name="name" value ="<%=profile.name%>" placeholder="first-last-name" disabled/>
+            <h3>Date of Birth</h3>
+            <input type="text"name="dob" id="dob" value="<%=day%>" class="input" disabled/>
+            <h3>Email-id</h3>
+            <input type="email" class="input" id="email"name="email"value="<%=profile.Email_id%>" placeholder="email@blank.com" />
+            <h3>Phone Number</h3>
+            <input type="text" class="input" id="phone_num" name="phone_num" value="<%=profile.Phone_number%>" placeholder="+1234567" />
+            <h3>Address</h3>
+            <input type="text"class="input"name="address" id="address"value = "<%=profile.Address%>" placeholder="building, street, area"/>   
+            <input type="submit" value="submit" name="submit" class="submit">
+            </form>
+          </div>
+          <div class="accountInfo tabShow">
+            <h2>Account Information</h2>
+            <h3>Branch</h3>
+            <input
+              type="text"
+              class="input"
+              placeholder="branch-of-bank"
+              value="<%=profile.Branch_of_Bank%>"
+              disabled/>
+    
+            <h3>Pan-ID</h3>
+            <input type="text" class="input"  value=<%=profile.Pan_id%> placeholder="1234567" disabled />
+            <h3>Primary Account Number</h3>
+            <input type="textarea" class="input" value="<%-profile.Primary_account_number%>" placeholder="1234567" disabled />
+            <h3>Saving Account Number</h3>
+            <input type="text" class="input" value="<%-profile.Saving_account_number%>" placeholder="1234567" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tabBtn = document.querySelectorAll(".tab");
+      const tab = document.querySelectorAll(".tabShow");
+
+      function tabs(panelIndex) {
+        tab.forEach(function (node) {
+          node.style.display = "none";
+        });
+        tab[panelIndex].style.display = "block";
+      }
+      tabs(0);
+    </script>
+    <script>
+      $(".tab").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  </body>
+</html>
