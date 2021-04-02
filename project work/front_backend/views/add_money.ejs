@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ATM | ADD MONEY</title>
-  <link rel="stylesheet" href="add_money.css" />
+  <link rel="stylesheet" href="/add_money.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
@@ -34,9 +34,11 @@ $(document).ready(function(){
     </h1>
   </header>
 
+  <%- include('./partials/navbar.ejs')%>
+
   <div id="content"></div>
   <div class="main">
-    <form action="">
+    <form action="/clients/addmoney" method="POST">
       <h1 class="heading"><b><big> ADD MONEY </big> </b> </h1>
       <div class="main1">
         <p class="part1">ENTER THE AMOUNT: <input type="number" name="number" id="number" max="10000" min="100" required></p>
