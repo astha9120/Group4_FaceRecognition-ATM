@@ -1,6 +1,8 @@
 const express=require("express");
-const clientController=require("../controllers/clientController");
-const router=express.Router();
+const clientController = require("../controller/clientController");
+
+const router = express.Router();
+
 
 //route for the balance query
 router.route('/balance').get(clientController.getBalance);
@@ -22,4 +24,16 @@ router
  .route('/withdrawmoney')
  .get(clientController.withdrawMoney)
  .post(clientController.withdrawMoneyPost);
+
+//route for chequebook renewal
+router
+.route('/chequebook')
+.get(clientController.chequebook);
+
+
+//route for chequebook renewal confirmation
+router
+.route('/chequebook_confirm')
+.post(clientController.chequebook_confirm);
+
 module.exports=router;
