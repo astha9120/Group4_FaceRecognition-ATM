@@ -5,36 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATM | Profile</title>
-    <link href="assets/css/all.css" rel="stylesheet" />
-    <link href="/assets/css/profile_final.css" rel="stylesheet" />
+    <link href="/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" />
+    <link href="/profile_final.css" rel="stylesheet" />
   </head>
   <body>
+   
     <header class="show">
       <h1>
-        <big><b> Bank Name</b></big>
+        <big><b> ATM Name</b></big>
       </h1>
     </header>
 
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="profile.html">Profile</a>
-      <div class="dropdown">
-        <button class="dropbtn">Banking</button>
-        <div class="dropdown-content">
-          <a href="add_money.html">Add Money</a>
-          <a href="balance.html">Balance</a>
-          <a href="Withdraw_money.html">Withdraw Money</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Transfer Money</button>
-        <div class="dropdown-content">
-          <a href="Self.html">Self Transfer</a>
-          <a href="Transfer.html">Transfer</a>
-        </div>
-      </div>
-      <a href="#">Contact us</a>
-    </div>
+    <%- include('./partials/navbar.ejs') %>
+    <% const dob = profile.Dob.toLocaleDateString() %>
 
     <div class="main">
       <div class="profileBox">
@@ -50,23 +33,26 @@
         </div>
         <div class="rightbox">
           <div class="profile tabShow">
+            <form action="/clients/profile" method="POST">
             <h2>Personal Information</h2>
             <h3>Full Name</h3>
-            <input type="text" class="input" placeholder="first-last-name" />
+            <input type="text" class="input" name="name" value="<%=profile.name%>"placeholder="first-last-name" disabled />
             <h3>Date of Birth</h3>
-            <input type="date" class="input" />
+            <input type="text" name="dob" value="<%=dob%>" class="input" disabled/>
             <h3>Email-id</h3>
-            <input type="email" class="input" placeholder="email@blank.com" />
+            <input type="email" name="email" class="input" value="<%=profile.Email_id%>" placeholder="email@blank.com" />
             <h3>Phone Number</h3>
-            <input type="number" class="input" placeholder="+1234567" />
+            <input type="number" name="phone_num"class="input" value ="<%=profile.Phone_number%>" placeholder="+1234567" />
             <h3>Address</h3>
             <input
               type="text"
               class="input"
+              name="address"
+              value="<%=profile.Address%>"
               placeholder="building, street, area"
             />
             <div class="box">
-              <button class="btn">Update</button>
+              <button type="submit" class="btn">Update</button>
             </div>
           </div>
           <div class="accountInfo tabShow">
@@ -75,18 +61,18 @@
             <input
               type="text"
               class="input"
+              value="<%=profile.Branch_of_Bank%>"
               placeholder="branch-of-bank"
               disabled
             />
             <h3>Pan-ID</h3>
-            <input type="number" class="input" placeholder="1234567" disabled />
+            <input type="text" class="input" value="<%=profile.Pan_id%>"placeholder="1234567" disabled />
             <h3>Primary Account Number</h3>
-            <input type="number" class="input" placeholder="1234567" disabled />
+            <input type="text" class="input" value="<%=profile.Primary_account_number%>" placeholder="1234567" disabled />
             <h3>Secondary Account Number</h3>
-            <input type="number" class="input" placeholder="1234567" disabled />
-            <div class="box">
-              <button class="btn">Update</button>
-            </div>
+            <input type="text" class="input" value = "<%=profile.Saving_account_number%>" placeholder="1234567" disabled />
+    
+          </form>
           </div>
         </div>
       </div>
