@@ -44,7 +44,7 @@ exports.updateProfile = async(req,res)=>{
     const Email_id = String(req.body.email);
     const Address=String(req.body.address);
     const Phone_number =String(req.body.phone);
-    console.log("emails::::"+Email_id);
+    //console.log("emails::::"+Email_id);
     try {
        res.status(200);
        Client.findOne({"id":main_id})
@@ -55,7 +55,7 @@ exports.updateProfile = async(req,res)=>{
             result.Phone_number=Phone_number;
             result.save();
             console.log(result);
-            res.redirect("/clients/profile");
+            res.redirect("/profile");
        }) 
        .catch((err)=>
          {
@@ -98,7 +98,7 @@ exports.chequebook_confirm= async(req,res)=>{
             res.render("checkbook_confirm",{address:address[0].Address});
         }
         else
-            res.redirect("/clients/home");
+            res.redirect("/home");
 
     } catch (error) {
         res.status(404);
@@ -124,7 +124,7 @@ exports.home=async(req,res)=>{
     try {
         //let s_id = number(sessionStorage.getItem('login_id'));
         const balance = await Client.find({id:main_id},{_id:0,Primary_balance:1,Saving_balance:1});
-        console.log(balance[0]);
+        //console.log(balance[0]);
         res.status(200);
         res.render('home',{balance:balance[0]});
     } catch (error) {
@@ -137,6 +137,7 @@ exports.home=async(req,res)=>{
 //Main page of the website
 exports.landingPage=async(req,res)=>{
     try {
+        main_id=-1;
         res.status(200);
         res.render('landing')
     } catch (error) {
@@ -176,7 +177,7 @@ exports.postLogin = async(req,res)=>{
    //console.log(obj)
     try {
         main_id=Number(obj.id);
-        console.log("MAIN_ID",main_id);
+        //console.log("MAIN_ID",main_id);
         const photos =await Client.find({id:main_id},{_id:0,img:1,Finger_img:1});
         // console.log("FACE",photos[0].img);
         // console.log("Finger",photos[0].Finger_img);
@@ -211,20 +212,21 @@ exports.postLogin = async(req,res)=>{
                 json = await response.json()
                 finger_check = json.response;
 
-                if (face_check&&finger_check) {res.redirect('/clients/home');}
+                if (face_check&&finger_check) {res.redirect('/home');}
                 else {
                     alert('Invalid Login Images');
-                    res.redirect('/clients/login');
+                    res.redirect('/login');
                 }
             } catch (error) {
                 console.log(error);
             }
-        })();      
+        })();     
          
      } catch (error) {
         res.status(404);
         alert("invalid UserID");
-        res.redirect('/clients/login')
+        main_id=-1;
+        res.redirect('/login')
     }
 }
     
@@ -296,7 +298,8 @@ exports.addMoneyPost = async (req, res) => {
             }
             console.log("Balance updated successfully");
             res.status(200);
-            res.redirect("/clients/home");
+            main_id=-1;
+            res.redirect("/");
         }
     }
     catch (err) {
@@ -410,8 +413,9 @@ exports.withdrawMoneyPost = async (req, res) => {
                 }
             }
             console.log("Transaction Successful");
+            main_id=-1;
             res.status(200);
-            res.redirect("/clients/home");
+            res.redirect("/");
         }
     }
     catch {
@@ -574,6 +578,7 @@ exports.transferMoneyPost = async (req, res) => {
                     });
                     newTransaction2.save();
                     console.log("Money Transfered Successfully");
+                    main_id=-1;
                     res.status(200);
                     res.render("Transfer_successful", { transfer_amount: transfer, transfer_fromname: result.name, transfer_fromaccount_number: account_number, transfer_toname: transferAccount.name, transfer_toaccount_number: transfer_acnumber });
                 }

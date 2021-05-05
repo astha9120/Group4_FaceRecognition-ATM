@@ -35,7 +35,7 @@ router
 
 //route for landing page
 router.
-route('/atm')
+route('/')
 .get(clientController.landingPage);
 
 

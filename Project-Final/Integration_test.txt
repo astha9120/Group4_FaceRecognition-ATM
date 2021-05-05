@@ -1,0 +1,787 @@
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 00:34:27.567711: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:34:29.042887: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+App running on port 127.0.0.1:3000 ...
+DB connected
+2021-05-06 00:35:04.495224: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:35:05.794573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:35:05.794848: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:35:05.834285: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:35:05.858524: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:35:05.870770: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:35:05.898245: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:35:05.913620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:35:05.967487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:35:05.968197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:35:05.969231: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:35:06.001090: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d58d2b9500 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:35:06.002093: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:35:06.003135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:35:06.004028: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:35:06.004405: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:35:06.004716: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:35:06.013968: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:35:06.015896: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:35:06.018806: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:35:06.021986: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:35:06.023887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:35:07.416409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:35:07.416735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:35:07.417148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:35:07.417900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:35:07.429023: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d5bebc9f60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:35:07.429671: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+2021-05-06 00:35:11.024184: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:35:11.141591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:35:11.142349: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:35:11.165833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:35:11.180577: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:35:11.193595: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:35:11.213358: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:35:11.230923: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:35:11.263558: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:35:11.265241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:35:11.266215: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:35:11.298390: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d044e1a060 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:35:11.299131: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:35:11.300406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:35:11.301261: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:35:11.305789: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:35:11.306495: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:35:11.309008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:35:11.310133: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:35:11.310848: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:35:11.314371: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:35:11.329136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:35:12.488180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:35:12.488541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:35:12.488955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:35:12.490160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:35:12.499291: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d078fb3990 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:35:12.499832: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+ * Serving Flask app "Face_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+ * Serving Flask app "Fingerprint_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3002/ (Press CTRL+C to quit)
+^CTraceback (most recent call last):
+  File "run_server.py", line 7, in <module>
+    node_server.wait()
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1259, in _wait
+    timeout_millis)
+KeyboardInterrupt
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 00:39:02.823080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:39:03.824405: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+App running on port 127.0.0.1:3000 ...
+DB connected
+2021-05-06 00:39:25.338093: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:39:26.576679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:39:26.577495: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:39:26.603389: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:39:26.619104: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:39:26.629972: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:39:26.647555: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:39:26.662606: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:39:26.699087: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:39:26.699671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:39:26.701491: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:39:26.724670: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x250dae94560 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:39:26.726083: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:39:26.727024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:39:26.727963: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:39:26.728627: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:39:26.729119: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:39:26.729695: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:39:26.730438: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:39:26.730951: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:39:26.731458: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:39:26.732924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:39:28.075667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:39:28.076131: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:39:28.076621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:39:28.077367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:39:28.083762: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2508bc8da00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:39:28.084449: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+2021-05-06 00:39:30.132172: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:39:30.257702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:39:30.258675: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:39:30.283013: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:39:30.298863: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:39:30.309106: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:39:30.326473: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:39:30.339069: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:39:30.364455: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:39:30.364983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:39:30.366035: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:39:30.390906: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d48daf62c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:39:30.391820: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:39:30.393209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:39:30.394431: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:39:30.395142: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:39:30.396682: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:39:30.397783: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:39:30.400067: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:39:30.402287: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:39:30.402685: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:39:30.403552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:39:31.349561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:39:31.350108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:39:31.350637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:39:31.351370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:39:31.358893: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d4af199040 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:39:31.359526: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+ * Serving Flask app "Face_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+ * Serving Flask app "Fingerprint_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3002/ (Press CTRL+C to quit)
+^CTraceback (most recent call last):
+  File "run_server.py", line 7, in <module>
+    node_server.wait()
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1259, in _wait
+    timeout_millis)
+KeyboardInterrupt
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 00:41:03.817600: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:41:04.896820: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+App running on port 127.0.0.1:3000 ...
+DB connected
+2021-05-06 00:41:27.932970: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:41:29.215421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:41:29.216134: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:41:29.243790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:41:29.261328: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:41:29.272300: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:41:29.290200: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:41:29.304733: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:41:29.340464: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:41:29.340940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:41:29.341617: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:41:29.363389: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x135dd44ff00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:41:29.364673: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:41:29.365963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:41:29.366998: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:41:29.367339: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:41:29.367681: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:41:29.368143: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:41:29.368691: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:41:29.369088: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:41:29.369454: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:41:29.370124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:41:30.664007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:41:30.664446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:41:30.664864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:41:30.665526: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:41:30.674154: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1358f627df0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:41:30.674723: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+2021-05-06 00:41:32.625122: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:41:32.746227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:41:32.747114: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:41:32.770402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:41:32.785877: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:41:32.796941: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:41:32.814170: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:41:32.828857: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:41:32.864933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:41:32.868337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:41:32.871287: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:41:32.914253: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2209772ceb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:41:32.915176: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:41:32.922205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:41:32.927242: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:41:32.928465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:41:32.929990: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:41:32.930633: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:41:32.931192: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:41:32.931552: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:41:32.931869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:41:32.933033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:41:34.009185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:41:34.009670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:41:34.010174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:41:34.010957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:41:34.019656: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x220cf191550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:41:34.020250: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+ * Serving Flask app "Face_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+ * Serving Flask app "Fingerprint_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3002/ (Press CTRL+C to quit)
+2021-05-06 00:42:05.028506: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:42:06.827947: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2021-05-06 00:42:07.099745: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:7 out of the last 7 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:8 out of the last 8 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:9 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:10 out of the last 10 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001368F7A7798> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+127.0.0.1 - - [06/May/2021 00:42:28] "GET /eval HTTP/1.1" 200 -
+2021-05-06 00:42:30.372792: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:42:30.909247: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:42:32.728557: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+127.0.0.1 - - [06/May/2021 00:42:35] "GET /eval HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "run_server.py", line 7, in <module>
+    node_server.wait()
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1259, in _wait
+    timeout_millis)
+KeyboardInterrupt
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 00:44:23.025565: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:44:23.954489: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+App running on port 127.0.0.1:3000 ...
+DB connected
+2021-05-06 00:44:48.835533: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:44:50.110407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:44:50.111384: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:44:50.147193: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:44:50.168966: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:44:50.186271: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:44:50.215110: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:44:50.235691: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:44:50.275125: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:44:50.275912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:44:50.278383: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:44:50.300477: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1444dd06d00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:44:50.301317: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:44:50.303042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:44:50.304099: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:44:50.305470: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:44:50.306932: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:44:50.307961: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:44:50.308538: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:44:50.309036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:44:50.309621: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:44:50.310996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:44:51.988395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:44:51.988937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:44:51.989700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:44:51.990944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:44:52.000562: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1447c9b92b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:44:52.001191: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+2021-05-06 00:44:54.767501: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 00:44:54.943092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:44:54.944422: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 00:44:54.982049: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:44:55.006583: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:44:55.022787: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:44:55.040412: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 00:44:55.057410: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 00:44:55.089387: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:44:55.089918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:44:55.090914: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 00:44:55.119333: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2888212bd00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:44:55.119996: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 00:44:55.121483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 00:44:55.122254: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 00:44:55.122662: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:44:55.123000: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 00:44:55.123689: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 00:44:55.124101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 00:44:55.124750: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 00:44:55.125581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:44:55.126242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 00:44:56.468372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 00:44:56.468780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 00:44:56.469185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 00:44:56.469852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 00:44:56.476576: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x288b918cb60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 00:44:56.477090: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+ * Serving Flask app "Fingerprint_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3002/ (Press CTRL+C to quit)
+ * Serving Flask app "Face_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2021-05-06 00:45:28.341735: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:45:29.809633: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2021-05-06 00:45:30.017950: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:7 out of the last 7 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:8 out of the last 8 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:9 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:10 out of the last 10 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+127.0.0.1 - - [06/May/2021 00:45:51] "GET /eval HTTP/1.1" 200 -
+2021-05-06 00:45:53.946750: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 00:45:54.306532: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 00:45:55.736042: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+127.0.0.1 - - [06/May/2021 00:45:58] "GET /eval HTTP/1.1" 200 -
+Balance updated successfully
+TypeError: D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\views\home.ejs:43
+    41|                 <div class="part1">
+    42|                     <p class="hello"> Primary Balance </p>
+ >> 43|                     <div id="num"><i class="fas fa-rupee-sign"></i><input type="number" name="number" id="num1" placeholder="<%=balance.Primary_balance%>" disabled ></div>
+    44|
+    45|
+    46|                 </div>
+
+Cannot read property 'Primary_balance' of undefined
+    at eval (eval at compile (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:15:33)
+    at home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:489:10)   
+    at View.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\response.js:1012:7)        
+    at exports.home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\controller\clientController.js:129:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+WARNING:tensorflow:5 out of the last 25 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:6 out of the last 26 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:7 out of the last 27 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001450FCC7828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+127.0.0.1 - - [06/May/2021 00:47:44] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 00:47:46] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 01:02:14] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 01:02:16] "GET /eval HTTP/1.1" 200 -
+{ Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat' }
+Yes
+{ Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat' }
+TypeError: D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\views\home.ejs:43
+    41|                 <div class="part1">
+    42|                     <p class="hello"> Primary Balance </p>
+ >> 43|                     <div id="num"><i class="fas fa-rupee-sign"></i><input type="number" name="number" id="num1" placeholder="<%=balance.Primary_balance%>" disabled ></div>
+    44|
+    45|
+    46|                 </div>
+
+Cannot read property 'Primary_balance' of undefined
+    at eval (eval at compile (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:15:33)
+    at home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:489:10)   
+    at View.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\response.js:1012:7)        
+    at exports.home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\controller\clientController.js:129:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+127.0.0.1 - - [06/May/2021 01:04:34] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 01:04:35] "GET /eval HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "run_server.py", line 7, in <module>
+    node_server.wait()
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1019, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1259, in _wait
+    timeout_millis)
+KeyboardInterrupt
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 01:05:48.695638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 01:05:50.031858: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+Traceback (most recent call last):
+  File "ML\Fingerprint-Varification\Fingerprint_Verification.py", line 3, in <module>
+    import tensorflow as tf
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\__init__.py", line 41, in <module>
+Traceback (most recent call last):
+  File "ML\Face-Verification\Face_Verification.py", line 1, in <module>
+    from mtcnn.mtcnn import MTCNN
+  File "D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\ML\Face-Verification\mtcnn\mtcnn.py", line 37, in <module>
+^CTraceback (most recent call last):
+  File "run_server.py", line 7, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\__init__.py", line 74, in <module>
+    node_server.wait()
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1019, in wait
+    from tensorflow.python.ops.standard_ops import *
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\standard_ops.py", line 27, in <module>
+  File "C:\Program Files\Python37\lib\subprocess.py", line 1259, in _wait
+    timeout_millis)
+KeyboardInterrupt
+    from tensorflow.python.training.experimental import loss_scaling_gradient_tape
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\training\experimental\loss_scaling_gradient_tape.py", line 21, in <module>        
+    from mtcnn.network.factory import NetworkFactory
+  File "D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\ML\Face-Verification\mtcnn\network\factory.py", line 26, in <module>      
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>    from tensorflow.keras.layers import Input, Dense, Conv2D, MaxPooling2D, PReLU, Flatten, Softmax
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\__init__.py", line 41, in <module>
+    from tensorflow.python.distribute import distribution_strategy_context
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\__init__.py", line 23, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\__init__.py", line 74, in <module>
+    from tensorflow.python.distribute import cross_device_ops
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\cross_device_ops.py", line 28, in <module>
+    from tensorflow.python.ops.standard_ops import *
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\standard_ops.py", line 27, in <module>
+    from tensorflow.python.training.experimental import loss_scaling_gradient_tape
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\training\experimental\loss_scaling_gradient_tape.py", line 21, in <module>        
+    from tensorflow.python.distribute import cross_device_utils
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\cross_device_utils.py", line 25, in <module>
+    from tensorflow.python.distribute import distribution_strategy_context
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\__init__.py", line 23, in <module>
+    from tensorflow.python.distribute import cross_device_ops
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\cross_device_ops.py", line 28, in <module>
+    from tensorflow.python.distribute import values as value_lib
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\values.py", line 25, in <module>
+    from tensorflow.python.distribute import cross_device_utils
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\cross_device_utils.py", line 25, in <module>
+    from tensorflow.python.distribute import distribute_lib
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\distribute_lib.py", line 129, in <module>
+    from tensorflow.python.distribute import values as value_lib
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\values.py", line 25, in <module>
+    from tensorflow.python.ops.losses import losses_impl
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\losses\losses_impl.py", line 28, in <module>
+    from tensorflow.python.distribute import distribute_lib
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\distribute\distribute_lib.py", line 129, in <module>
+    from tensorflow.python.ops import nn
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\nn.py", line 28, in <module>
+    from tensorflow.python.ops.losses import losses_impl
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\losses\losses_impl.py", line 28, in <module>
+    from tensorflow.python.ops import nn
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\nn.py", line 28, in <module>
+    from tensorflow.python.ops import ctc_ops as _ctc_ops
+  File "C:\Program Files\Python37\lib\site-packages\tensorflow\python\ops\ctc_ops.py", line 38, in <module>
+    from tensorflow.python.ops import ctc_ops as _ctc_ops
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 916, in get_data
+KeyboardInterrupt
+    from tensorflow.python.ops import inplace_ops
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 916, in get_data
+KeyboardInterrupt
+
+
+D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final>python run_server.py
+2021-05-06 01:06:32.748946: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 01:06:33.842238: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+App running on port 127.0.0.1:3000 ...
+DB connected
+2021-05-06 01:06:58.748480: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+TypeError: D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\views\home.ejs:43
+    41|                 <div class="part1">
+    42|                     <p class="hello"> Primary Balance </p>
+ >> 43|                     <div id="num"><i class="fas fa-rupee-sign"></i><input type="number" name="number" id="num1" placeholder="<%=balance.Primary_balance%>" disabled ></div>
+    44|
+    45|
+    46|                 </div>
+
+Cannot read property 'Primary_balance' of undefined
+    at eval (eval at compile (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:15:33)
+    at home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\ejs\lib\ejs.js:489:10)   
+    at View.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\node_modules\express\lib\response.js:1012:7)        
+    at exports.home (D:\DAIICT\Sem - 6\SE\Project\Group4_FaceRecognition-ATM\Project-Final\controller\clientController.js:129:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+2021-05-06 01:07:00.073521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 01:07:00.074335: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 01:07:00.115194: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 01:07:00.143767: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 01:07:00.161555: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 01:07:00.188924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 01:07:00.207601: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 01:07:00.246080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:00.246690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 01:07:00.247477: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 01:07:00.273194: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x24b12ee0700 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 01:07:00.274128: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 01:07:00.275179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 01:07:00.275955: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 01:07:00.276387: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 01:07:00.276713: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 01:07:00.277056: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 01:07:00.277357: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 01:07:00.277636: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 01:07:00.277952: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:00.278467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 01:07:02.051117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 01:07:02.051765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 01:07:02.052505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 01:07:02.054270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 01:07:02.066471: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x24b44ea2900 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 01:07:02.067854: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+2021-05-06 01:07:04.815131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-06 01:07:04.952978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 01:07:04.954037: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-06 01:07:04.983765: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 01:07:04.998465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 01:07:05.009485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 01:07:05.025936: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-06 01:07:05.042059: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-06 01:07:05.066901: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:05.069614: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 01:07:05.071082: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-05-06 01:07:05.096615: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1cd74eb4aa0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-06 01:07:05.097325: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-06 01:07:05.098641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.62GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-06 01:07:05.100431: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll        
+2021-05-06 01:07:05.101443: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 01:07:05.103182: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-06 01:07:05.103739: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-06 01:07:05.104583: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll       
+2021-05-06 01:07:05.105047: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll       
+2021-05-06 01:07:05.105422: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:05.106358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-06 01:07:06.455390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-06 01:07:06.455800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-06 01:07:06.456353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N
+2021-05-06 01:07:06.457060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-06 01:07:06.466262: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1cd110d96c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-06 01:07:06.467095: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1050 Ti, Compute Capability 6.1
+ * Serving Flask app "Fingerprint_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3002/ (Press CTRL+C to quit)
+ * Serving Flask app "Face_Verification" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:3001/ (Press CTRL+C to quit)
+2021-05-06 01:07:27.525138: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:29.011184: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2021-05-06 01:07:29.264816: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:7 out of the last 7 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:8 out of the last 8 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:9 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function 
+has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+WARNING:tensorflow:10 out of the last 10 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000024B7A647828> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings is likely due to passing python objects instead of tensors. Also, tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. Please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for more details.
+127.0.0.1 - - [06/May/2021 01:07:47] "GET /eval HTTP/1.1" 200 -
+2021-05-06 01:07:49.666155: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-06 01:07:50.031703: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-06 01:07:51.230904: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation.
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+127.0.0.1 - - [06/May/2021 01:07:53] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 01:12:15] "GET /eval HTTP/1.1" 200 -
+127.0.0.1 - - [06/May/2021 01:12:17] "GET /eval HTTP/1.1" 200 -
+[
+  {
+    img: { data: [Binary] },
+    Finger_img: { data: [Binary] },
+    Primary_balance: 5101,
+    Saving_balance: 6000,
+    name: 'Mukesh Shah',
+    Dob: 1990-12-11T18:30:00.000Z,
+    Phone_number: '9190118843',
+    Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat',
+    Email_id: 'mukesh33@gmail.com',
+    Branch_of_Bank: 'bank of baroda',
+    Pan_id: 'ENTPM9180W',
+    Primary_account_number: '9090 1245 1285 9898',
+    Saving_account_number: '9090 1245 1285 0010',
+    Reason: null,
+    Schedule_time: null
+  }
+]
+{ Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat' }
+No
+[
+  {
+    img: { data: [Binary] },
+    Finger_img: { data: [Binary] },
+    Primary_balance: 5101,
+    Saving_balance: 6000,
+    name: 'Mukesh Shah',
+    Dob: 1990-12-11T18:30:00.000Z,
+    Phone_number: '9190118843',
+    Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat',
+    Email_id: 'mukesh33@gmail.com',
+    Branch_of_Bank: 'bank of baroda',
+    Pan_id: 'ENTPM9180W',
+    Primary_account_number: '9090 1245 1285 9898',
+    Saving_account_number: '9090 1245 1285 0010',
+    Reason: null,
+    Schedule_time: null
+  }
+]
+{
+  img: {
+    data: Binary {
+      _bsontype: 'Binary',
+      sub_type: 0,
+      position: 47206,
+      buffer: <Buffer ff d8 ff db 00 84 00 03 02 02 03 02 02 03 03 03 03 04 03 03 04 05 08 05 05 04 04 05 0a 07 07 06 08 0c 0a 0c 0c 0b 0a 0b 0b 0d 0e 12 10 0d 0e 11 0e 0b ... 47156 more bytes>
+    }
+  },
+  Finger_img: {
+    data: Binary {
+      _bsontype: 'Binary',
+      sub_type: 0,
+      position: 77878,
+      buffer: <Buffer 42 4d 36 30 01 00 00 00 00 00 36 04 00 00 28 00 00 00 f0 00 00 00 40 01 00 00 01 00 08 00 00 00 00 00 00 2c 01 00 c4 0e 00 00 c4 0e 00 00 00 01 00 00 ... 77828 more bytes>
+    }
+  },
+  Primary_balance: 5101,
+  Saving_balance: 6000,
+  _id: 6061a7762131c8b4b924e9f6,
+  id: 1,
+  name: 'Mukesh Shah',
+  Dob: 1990-12-11T18:30:00.000Z,
+  Phone_number: '9190118847',
+  Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat',
+  Email_id: 'mukesh33@gmail.com',
+  Branch_of_Bank: 'bank of baroda',
+  Pan_id: 'ENTPM9180W',
+  Primary_account_number: '9090 1245 1285 9898',
+  Saving_account_number: '9090 1245 1285 0010',
+  Reason: null,
+  Schedule_time: null
+}
+[
+  {
+    img: { data: [Binary] },
+    Finger_img: { data: [Binary] },
+    Primary_balance: 5101,
+    Saving_balance: 6000,
+    name: 'Mukesh Shah',
+    Dob: 1990-12-11T18:30:00.000Z,
+    Phone_number: '9190118847',
+    Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat',
+    Email_id: 'mukesh33@gmail.com',
+    Branch_of_Bank: 'bank of baroda',
+    Pan_id: 'ENTPM9180W',
+    Primary_account_number: '9090 1245 1285 9898',
+    Saving_account_number: '9090 1245 1285 0010',
+    Reason: null,
+    Schedule_time: null
+  }
+]
+[
+  {
+    img: { data: [Binary] },
+    Finger_img: { data: [Binary] },
+    Primary_balance: 5101,
+    Saving_balance: 6000,
+    name: 'Mukesh Shah',
+    Dob: 1990-12-11T18:30:00.000Z,
+    Phone_number: '9190118847',
+    Address: '12-12-asoplav near navagam,Ahmedabad,Gujarat',
+    Email_id: 'mukesh33@gmail.com',
+    Branch_of_Bank: 'bank of baroda',
+    Pan_id: 'ENTPM9180W',
+    Primary_account_number: '9090 1245 1285 9898',
+    Saving_account_number: '9090 1245 1285 0010',
+    Reason: null,
+    Schedule_time: null
+  }
+]

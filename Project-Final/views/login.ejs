@@ -52,7 +52,7 @@ $('.image-upload-wrap').bind('dragover', function () {
 </head>
 <body>
     <div class="main">
-      <form action="/clients/login" method="POST" enctype="multipart/form-data">
+      <form action="/login" method="POST" enctype="multipart/form-data">
           <h1 class="heading"><b><big> LOGIN </big> </b> </h1>
           
           <div class="main1">
@@ -62,10 +62,10 @@ $('.image-upload-wrap').bind('dragover', function () {
 
           <div class="main3">
             <div class="main4">
-            <p >Face Image <br>  <div class="main5"> <input type="file" name="face" id="face" accept="image/*"></div></p>
+            <p >Face Image <br>  <div class="main5"> <input type="file" name="face" id="face" accept="image/*" required></div></p>
           </div>
           <div class="main4">
-            <p >FIngerprint Image <br>  <div class="main5"> <input type="file" name="finger" id="finger" accept="image/*"></div></p>
+            <p >FIngerprint Image <br>  <div class="main5"> <input type="file" name="finger" id="finger" accept="image/*" required></div></p>
           </div>
            
         </div>
