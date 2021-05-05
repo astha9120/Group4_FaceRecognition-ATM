@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM | CHECKBOOK RENEWAL</title>
+    <link rel="stylesheet" href="/checkbook_home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="show">
+      <h1>
+        <big><b> ATM Name</b></big>
+      </h1>
+    </header>
+    <%- include('./partials/navbar.ejs') %>
+    <div id="content"></div>
+
+    <div class="main">
+      <form action="/clients/chequebook_confirm" method="POST">
+        <h3 id="conformation">Do you want to renew your checkbook?</h3>
+        <div class="btn">
+          <input type="submit" name="submit" value="Yes" class="submit" />
+          <input type="submit" name="submit" value="No" class="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

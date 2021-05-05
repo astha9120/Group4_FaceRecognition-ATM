@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM | ERROR</title>
+  <link href="new/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/error.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('#content').load("navbar.html");
+      $(".change").text("<%= message %>");
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="show">
+    <h1>
+      <big><b> Bank Name</b></big>
+    </h1>
+  </header>
+  <%- include('./partials/navbar.ejs')%>
+
+    <div class="err">
+      <div><i class="fas fa-exclamation-triangle fa-2x" id="warning"></i></div>
+      <div class= "change">Sorry! An Error Occurred</div>
+    </div>
+    <div class="sub">
+
+
+      <a href="/clients/home" class="submit">Back To Home</a>
+    </div>
+    <!-- <div class="main">
+      <!-- <div class="balance">
+        <h2 id="balance_heading">ACCOUNT BALANCE</h2>
+      </div>
+      <div class="accounts">
+        <div class="Primary_Account">
+          <h4 class="pah">Primary Account</h4>
+          <div id="pan_text">Account No. : <input type="text" name="primary_acc_no" id="pan"></div>
+          <div id="pab_text">Balance : <input type="text" name="primary_acc_bal" id="pab"></div>
+        </div>
+        <div class="Saving_Account">
+          <h4 class="sah">Saving Account</h4>
+          <div id="san_text">Account No. : <input type="text" name="saving_acc_no" id="san"></div>
+          <div id="sab_text">Balance : <input type="text" name="saving_acc_bal" id="sab"></div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+</body>
+
+</html>

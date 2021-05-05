@@ -1,0 +1,79 @@
+
+  
+  header h1 {
+    text-align: right;
+    padding: 30px;
+    font-size: 20px;
+    font-size: 50px;
+    margin: 0mm;
+    border-radius: 10px;
+  }
+  
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .show{
+    background-image: url(./images/16.png);
+    background-size:contain;
+      background-repeat: no-repeat;
+     margin-left: 10px;
+  }
+  body {
+    
+  height: 100vh;
+  width: 100%;
+background-image: url(./images/cool13.jpeg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flexbox;
+    
+  }
+  
+ .bank {
+    background-color: black;
+    overflow: hidden;
+    margin: 0mm;
+    border: 0ch;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 70vw;
+    height: 65vh;
+    box-sizing: border-box;
+    position: relative;
+
+    margin:auto;
+  }
+
+  #conformation {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 0ch;
+  }
+
+  #addr {
+    width: 60%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 15vw;
+    margin-bottom: 100px;
+    margin-top: 0%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+
+  
