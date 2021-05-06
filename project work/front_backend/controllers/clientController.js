@@ -1,25 +1,242 @@
 const Client = require("../models/client");
-const Atmcash = require("../models/atmcash");
-const Transaction = require("../models/transaction");
-const path = require("path");
+const Atmcash=require("../models/atmcash");
+const Transaction=require("../models/transaction");
+const path=require("path");
 const fetch = require('node-fetch');
 const alert = require('alert')
 
-const fs = require('fs');
+const fs=require('fs');
 
-var main_id;
+var main_id ; 
 
-
-function ISTtime() {
+function ISTtime()
+{
     var currentTime = new Date();
 
     var currentOffset = currentTime.getTimezoneOffset();
 
     var ISTOffset = 330;   // IST offset UTC +5:30 
 
-    var ISTTime = new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000);
+    var ISTTime = new Date(currentTime.getTime() + (ISTOffset + currentOffset)*60000);
     return ISTTime;
 }
+
+
+//get the profile
+exports.getProfile=async(req,res)=>{
+    try {
+        //let s_id = number(sessionStorage.getItem('login_id'));
+        const profile = await Client.find({id:main_id},{id:0,_id:0});
+        console.log(profile);
+        res.status(200);
+        res.render('profile',{profile:profile[0]});
+        
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+//updation of profile
+exports.updateProfile = async(req,res)=>{
+    //let s_id = number(sessionStorage.getItem('login_id'));
+    const Email_id = String(req.body.email);
+    const Address=String(req.body.address);
+    const Phone_number =String(req.body.phone);
+    //console.log("emails::::"+Email_id);
+    try {
+       res.status(200);
+       Client.findOne({"id":main_id})
+       .then((result)=>{
+    
+            result.Email_id=Email_id;
+            result.Address=Address;
+            result.Phone_number=Phone_number;
+            result.save();
+            console.log(result);
+            res.redirect("/profile");
+       }) 
+       .catch((err)=>
+         {
+            res.status(404);
+            res.render("error", { message: "Sorry!! An Error Occurred" });
+            return;
+         })
+        
+    } catch (err) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+
+//chequebook renewal page
+exports.chequebook= async(req,res)=>{
+    try {
+        //let s_id = number(sessionStorage.getItem('login_id'));
+        res.status(200);
+        const address = await Client.find({id:main_id},{Address:1,_id:0});
+        console.log(address[0]);
+            res.render("checkbook_home",{address:address[0].Address});
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+//address page for chequebook renewal
+exports.chequebook_confirm= async(req,res)=>{
+    console.log(req.body.submit)
+    try {
+        if(req.body.submit=="Yes"){
+            //let s_id = number(sessionStorage.getItem('login_id'));
+            const address = await Client.find({id:main_id},{Address:1,_id:0});
+            console.log(address[0]);
+            res.render("checkbook_confirm",{address:address[0].Address});
+        }
+        else
+            res.redirect("/home");
+
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+//contact us page
+exports.contact=async(req,res)=>{
+    try {
+        res.status(200);
+        res.render("contact");
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+//Home page and balance
+exports.home=async(req,res)=>{
+    try {
+        //let s_id = number(sessionStorage.getItem('login_id'));
+        const balance = await Client.find({id:main_id},{_id:0,Primary_balance:1,Saving_balance:1});
+        //console.log(balance[0]);
+        res.status(200);
+        res.render('home',{balance:balance[0]});
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+//Main page of the website
+exports.landingPage=async(req,res)=>{
+    try {
+        main_id=-1;
+        res.status(200);
+        res.render('landing')
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+
+
+//Login page
+exports.login=async(req,res)=>{
+    try {
+        res.status(200);
+        res.render('login')
+    } catch (error) {
+        res.status(404);
+        res.render("error", { message: "Sorry!! An Error Occurred" });
+        return;
+    }
+}
+  
+//data retirval after login
+exports.postLogin = async(req,res)=>{
+    var obj = {
+        id:req.body.number,
+        face: {
+            data: fs.readFileSync(path.join(path.resolve("./") +'\\Images' + '\\face.jpg')),
+            contentType: 'image/png'
+        },
+        finger: {
+            data: fs.readFileSync(path.join(path.resolve("./") +'\\Images' + '\\finger.jpg')),
+            contentType: 'image/png'
+        }
+    }
+   // console.log(path.join(path.resolve("./") +'\\uploads' + '\\finger'));
+   //console.log(obj)
+    try {
+        main_id=Number(obj.id);
+        //console.log("MAIN_ID",main_id);
+        const photos =await Client.find({id:main_id},{_id:0,img:1,Finger_img:1});
+        // console.log("FACE",photos[0].img);
+        // console.log("Finger",photos[0].Finger_img);
+
+        var data = Buffer.from(photos[0].img.data.buffer, 'base64');
+        fs.writeFile(path.resolve("./") +'\\Images' + '\\face_check.jpg', data, function(err) {
+            if (err) {
+              console.error(err)
+              return
+            }
+        });
+
+        data = Buffer.from(photos[0].Finger_img.data.buffer, 'base64');
+        fs.writeFile(path.resolve("./") +'\\Images' + '\\finger_check.jpg', data, function(err) {
+            if (err) {
+                  console.error(err)
+                  return
+            }
+        });
+        res.status(200);
+        
+        var face_check = true;
+        var finger_check = true;
+
+        // (async () => {
+        //     try {
+        //         var response = await fetch('http://127.0.0.1:3001/eval');
+        //         var json = await response.json()
+        //         face_check = json.response;
+
+        //         response = await fetch('http://127.0.0.1:3002/eval');
+        //         json = await response.json()
+        //         finger_check = json.response;
+
+        //         if (face_check&&finger_check) {res.redirect('/clients/home');}
+        //         else {
+        //             alert('Invalid Login Images');
+        //             res.redirect('/clients/login');
+        //         }
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // })(); 
+        if (face_check&&finger_check) {res.redirect('/home');}
+        else {
+                alert('Invalid Login Images');
+                main_id=-1;
+                res.redirect('/login');
+            }     
+         
+     } catch (error) {
+        res.status(404);
+        alert("invalid UserID");
+        main_id=-1;
+        res.redirect('/login')
+    }
+}
+    
+//sessionStorage.removeItem('key');
 
 exports.addMoney = async (req, res) => {
     try {
@@ -87,7 +304,7 @@ exports.addMoneyPost = async (req, res) => {
             }
             console.log("Balance updated successfully");
             res.status(200);
-            main_id = -1;
+            main_id=-1;
             res.redirect("/");
         }
     }
@@ -202,7 +419,7 @@ exports.withdrawMoneyPost = async (req, res) => {
                 }
             }
             console.log("Transaction Successful");
-            main_id = -1;
+            main_id=-1;
             res.status(200);
             res.redirect("/");
         }
@@ -367,7 +584,7 @@ exports.transferMoneyPost = async (req, res) => {
                     });
                     newTransaction2.save();
                     console.log("Money Transfered Successfully");
-                    main_id = -1;
+                    main_id=-1;
                     res.status(200);
                     res.render("Transfer_successful", { transfer_amount: transfer, transfer_fromname: result.name, transfer_fromaccount_number: account_number, transfer_toname: transferAccount.name, transfer_toaccount_number: transfer_acnumber });
                 }
@@ -378,94 +595,5 @@ exports.transferMoneyPost = async (req, res) => {
         res.status(404);
         res.render("error", { message: "Sorry!! An Error Occurred" });
         return;
-    }
-}
-
-exports.getBalance = async(req,res)=>{
-    try {
-        const balance = await Client.find({id:1},{Primary_balance:1,_id:0,Saving_balance:1});
-        console.log(balance[0]);
-        res.status(200);
-        res.render('balance',{Primary_balance:balance[0].Primary_balance,Saving_balance:balance[0].Saving_balance})
-    } catch (error) {
-        res.status(404).json({
-            status:'fail',
-            message:error
-        })
-    }
-}
-
-exports.getProfile=async(req,res)=>{
-    try {
-        const profile = await Client.find({id:1},{id:0,_id:0});
-        console.log(profile);
-        res.status(200);
-        res.render('profile_final',{profile:profile[0]});
-        
-    } catch (error) {
-        res.status(404).json({
-            status:'fail',
-            message:error
-        })
-    }
-}
-
-
-exports.updateProfile = async(req,res)=>{
-    
-   const Email_id = String(req.body.email);
-    const Address=String(req.body.address);
-    const Phone_number =String(req.body.phone_num);
-    console.log("emails::::"+Email_id);
-    try {
-       res.status(200);
-       Client.findOne({"id":1})
-       .then((result)=>{
-        if(req.body.submit == "submit"){
-            result.Email_id=Email_id;
-            result.Address=Address;
-            result.Phone_number=Phone_number;
-            result.save();
-            console.log(result);
-            res.redirect("/clients/profile");
-            }
-       }) 
-       .catch((err)=>
-         {
-           res.status(404).send();
-           console.log(err);
-         })
-        
-    } catch (err) {
-        res.status(404).json({
-            status:'fail',
-            message:error
-        })
-    }
-}
-
-
-
-exports.chequebook= async(req,res)=>{
-    try {
-        res.status(200);
-        res.render('checkbook_home');
-    } catch (error) {
-        res.status(404).send();
-    }
-}
-
-exports.chequebook_confirm= async(req,res)=>{
-    try {
-        if(req.body.submit=="Yes"){
-            const address = await Client.find({id:1},{Address:1,_id:0});
-            console.log(address[0]);
-            res.render("checkbook_confirm",{address:address[0].Address});
-        }
-        else
-            res.redirect("/clients/balance");
-
-    } catch (error) {
-        res.status(404).send();
     }
 }

@@ -55,6 +55,16 @@ const clientSchema = new mongoose.Schema({
     Schedule_time:{
       type:Date,
       //required:[true,'A customer has to select time']
+    },
+    img:
+    {
+        data:Buffer,
+        Type:String
+    },
+    Finger_img:
+    {
+        data:Buffer,
+        Type:String
     }
 });
 const Client= new mongoose.model("Client", clientSchema);
