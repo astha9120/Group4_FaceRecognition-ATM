@@ -6,25 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ATM | ADD MONEY</title>
-  <link rel="stylesheet" href="/add_money.css" />
+  <link rel="stylesheet" href="/Add_money.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("form").submit(function(){
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("form").submit(function () {
 
-alert("Success!!\nMoney has been added")
-  });
-});
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-   
-   $('#content').load("navbar.html");
+        alert("Success!!\nMoney has been added")
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
 
-});
-</script>
+      $('#content').load("navbar.html");
+
+    });
+  </script>
 </head>
 
 <body>
@@ -33,26 +33,32 @@ $(document).ready(function(){
       <big><b> Bank Name</b></big>
     </h1>
   </header>
-
   <%- include('./partials/navbar.ejs')%>
+    <div id="content"></div>
+    <div class="main">
+      <form action="/addmoney" method="POST">
+        <h1 class="heading"><b><big> ADD MONEY </big> </b> </h1>
+        <div class="main1">
+          <p class="part1">Enter The Amount: <input type="number" name="number" id="number" max="10000" min="100"
+              required></p>
 
-  <div id="content"></div>
-  <div class="main">
-    <form action="/clients/addmoney" method="POST">
-      <h1 class="heading"><b><big> ADD MONEY </big> </b> </h1>
-      <div class="main1">
-        <p class="part1">ENTER THE AMOUNT: <input type="number" name="number" id="number" max="10000" min="100" required></p>
+        </div>
+        <div class="page1">
+          <p>
+            Select Account
+            <select name="transfer" id="transfer">
+              <option value="PRIMARY ACCOUNT">Primary</option>
+              <option value="SAVING ACCOUNT">Saving</option>
+            </select>
+          </p>
+        </div>
+        <div class="sub">
+          <input type="submit" value="Deposit" class="submit">
+        </div>
 
-      </div>
-      <div class="sub">
+      </form>
+    </div>
 
-        <input type="submit" value="PRIMARY ACCOUNT" class="submit" >
-        <input type="submit" value="SAVING ACCOUNT" class="submit" >
-      </div>
-
-  </form>
-  </div>
- 
 </body>
 
 </html>
