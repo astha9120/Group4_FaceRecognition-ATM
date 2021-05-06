@@ -5,31 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATM | WITHDRAW MONEY</title>
-  <link rel="stylesheet" href="/Withdraw_money.css" />
+  <title>ATM | TRANSFER MONEY</title>
+  <link rel="stylesheet" href="/Transfer_money.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("form").submit(function () {
-        var primary_balance = Number('<%= pbalance %>');
-        var saving_balance = Number('<%= sbalance %>');
-        var cash = Number('<%= cash %>');
-        var debit = document.getElementById("number").value;
-        var ac = document.getElementById("transfer").value;
-        if (ac == "PRIMARY ACCOUNT") {
-          if (debit <= primary_balance && debit <= cash) {
-            alert("Transaction Successful!!\nPlease collect your cash");
-          }
-        }
-        else {
-          if (debit <= saving_balance && debit <= cash) {
-            alert("Transaction Successful!!\nPlease collect your cash");
-          }
-        }
-      });
-    });
-  </script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
@@ -49,13 +29,17 @@
   <%- include('./partials/navbar.ejs')%>
     <div id="content"></div>
     <div class="main">
-      <form action="/withdrawmoney" method="POST">
-        <h1 class="heading"><b><big> WITHDRAW MONEY </big> </b> </h1>
+      <form action="/transfermoney" method="POST">
+        <h1 class="heading"><b><big> TRANSFER MONEY </big> </b> </h1>
+        <div class="main1">
+          <p class="part1">Enter The Account Number: <input type="number" placeholder="Enter 16 digit AC number"
+              name="acnumber" id="number" pattern="[0-9]{16}" required></p>
+        </div>
         <div class="main1">
           <p class="part1">Enter The Amount: <input type="number" name="number" id="number" max="10000" min="100"
               required></p>
-
         </div>
+
         <div class="page1">
           <p>
             Select Account
@@ -65,8 +49,9 @@
             </select>
           </p>
         </div>
+
         <div class="sub">
-          <input type="submit" value="Withdraw" class="submit">
+          <input type="submit" value="Transfer" class="submit">
         </div>
 
       </form>
