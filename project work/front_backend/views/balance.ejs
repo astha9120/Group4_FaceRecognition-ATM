@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM | BALANCE</title>
+    <link rel="stylesheet" href="/balance.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+   
+    <header class="show">
+      <h1>
+        <big><b> ATM Name</b></big>
+      </h1>
+    </header>
+    <%- include('./partials/navbar.ejs') %>
+    <div id="content"></div>
+
+    <div class="main">
+      <h1 class="heading"><b><big> BALANCE </big> </b> </h1>
+      <div id="pb">PRIMARY BALANCE : <input type="text" name="primary_balance" value="<%=Primary_balance%>" id="pb_in" disabled></div>
+      <div id="sb">SECONDARY BALANCE : <input type="text" name="secondary_balance"value= "<%=Saving_balance%>" id="sb_in" disabled></div>
+    </div>
+  </body>
+</html>

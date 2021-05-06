@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM | CONTACT US</title>
+  <link rel="stylesheet" href="/contact.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+
+alert("Success!!\nMeeting has been scheduled.")
+  });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="show">
+    <h1>
+      <big><b> ATM Name</b></big>
+    </h1>
+  </header>
+
+  <div id="content"></div>
+  <div class="main">
+    <form action="">
+      <h1 class="heading"><b><big> CONTACT US </big> </b> </h1>
+      <div class="main2">
+        <p class="part1">Pick a Date and Time: </p>
+        <input type="datetime-local"  name="number" id="number"  required>
+      </div>
+      <div class="main2">
+        <p class="part2">Note: </p>
+        <textarea name="note" id="number1" cols="50" rows="5"></textarea>
+      </div>
+
+     
+      <div class="sub">
+
+        
+        <input type="submit" value="Schedule" class="submit" >
+      </div>
+
+  </form>
+  </div>
+ 
+</body>
+
+</html>

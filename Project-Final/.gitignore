@@ -1,0 +1,5 @@
+# node module
+node_modules/
+
+#pycache
+__pycache__

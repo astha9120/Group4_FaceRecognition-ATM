@@ -1,0 +1,473 @@
+E:\dowloads\Group4\Project-Final\ML>cd Fingerprint-Varification
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>pylint Fingerprint-Verification.py
+************* Module Fingerprint-Verification.py
+Fingerprint-Verification.py:1:0: F0001: No module named Fingerprint-Verification.py (fatal)
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>pylint Fingerprint_Verification.py
+************* Module Fingerprint_Verification
+Fingerprint_Verification.py:32:0: C0301: Line too long (126/100) (line-too-long)
+Fingerprint_Verification.py:33:0: C0301: Line too long (126/100) (line-too-long)
+Fingerprint_Verification.py:45:11: C0326: Exactly one space required around comparison
+if __name__=='__main__':
+           ^^ (bad-whitespace)
+Fingerprint_Verification.py:1:0: C0103: Module name "Fingerprint_Verification" doesn't conform to snake_case naming style (invalid-name)
+Fingerprint_Verification.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+Fingerprint_Verification.py:25:0: W0622: Redefining built-in 'eval' (redefined-builtin)
+Fingerprint_Verification.py:3:0: E0401: Unable to import 'tensorflow' (import-error)
+Fingerprint_Verification.py:4:0: E0401: Unable to import 'cv2' (import-error)
+Fingerprint_Verification.py:9:0: C0103: Constant name "current_path" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:11:0: C0103: Constant name "app" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:12:0: C0103: Constant name "image_width" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:12:14: C0103: Constant name "image_height" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:14:0: C0103: Constant name "model" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:15:0: C0103: Constant name "file1" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:16:0: C0103: Constant name "file2" doesn't conform to UPPER_CASE naming style (invalid-name)
+Fingerprint_Verification.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+Fingerprint_Verification.py:1:0: W0611: Unused import os (unused-import)
+Fingerprint_Verification.py:4:0: W0611: Unused import cv2 (unused-import)
+Fingerprint_Verification.py:6:0: C0411: third party import "from flask import Flask" should be placed before "import tensorflow as tf" (wrong-import-order)
+Fingerprint_Verification.py:7:0: C0411: standard import "import pathlib" should be placed before "import numpy as np" (wrong-import-order)
+
+------------------------------------
+Your code has been rated at -1.20/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>pylint prepare.py
+************* Module prepare
+prepare.py:70:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:72:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:74:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:76:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:79:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:81:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:82:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:89:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:95:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:97:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:98:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:105:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:124:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:128:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:134:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:138:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:153:42: C0326: No space allowed around keyword argument assignment
+    def prepare_train_data(self, save_url = '', save_img = False):
+                                          ^ (bad-whitespace)
+prepare.py:153:57: C0326: No space allowed around keyword argument assignment
+    def prepare_train_data(self, save_url = '', save_img = False):
+                                                         ^ (bad-whitespace)
+prepare.py:176:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+prepare.py:198:0: C0301: Line too long (115/100) (line-too-long)
+prepare.py:211:0: C0301: Line too long (119/100) (line-too-long)
+prepare.py:225:0: C0301: Line too long (119/100) (line-too-long)
+prepare.py:228:0: C0303: Trailing whitespace (trailing-whitespace)
+prepare.py:235:48: C0326: No space allowed around keyword argument assignment
+                util.random_noise(img_arr, mode = 'gaussian')
+                                                ^ (bad-whitespace)
+prepare.py:242:0: C0301: Line too long (119/100) (line-too-long)
+prepare.py:250:43: C0326: No space allowed around keyword argument assignment
+    def prepare_eval_data(self, eval_count = 100, save_url = '', save_img = False):
+                                           ^ (bad-whitespace)
+prepare.py:250:59: C0326: No space allowed around keyword argument assignment
+    def prepare_eval_data(self, eval_count = 100, save_url = '', save_img = False):
+                                                           ^ (bad-whitespace)
+prepare.py:250:74: C0326: No space allowed around keyword argument assignment
+    def prepare_eval_data(self, eval_count = 100, save_url = '', save_img = False):
+                                                                          ^ (bad-whitespace)
+prepare.py:290:0: C0301: Line too long (115/100) (line-too-long)
+prepare.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+prepare.py:1:0: E0401: Unable to import 'cv2' (import-error)
+prepare.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:19:0: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:21:15: W0612: Unused variable 'finger_index' (unused-variable)
+prepare.py:25:0: C0103: Argument name "CropWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:25:0: C0103: Argument name "CropHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:31:4: C0103: Variable name "ExpWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:32:4: C0103: Variable name "ExpHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:41:14: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:46:0: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:46:0: R0914: Too many local variables (20/15) (too-many-locals)
+prepare.py:47:4: C0103: Variable name "CropWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:48:4: C0103: Variable name "CropHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:49:4: C0103: Variable name "ExpWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:50:4: C0103: Variable name "ExpHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:55:4: C0103: Variable name "bw" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:69:15: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+prepare.py:46:0: R0912: Too many branches (23/12) (too-many-branches)
+prepare.py:46:0: R0915: Too many statements (80/50) (too-many-statements)
+prepare.py:147:0: C0103: Class name "Prepare_Data" doesn't conform to PascalCase naming style (invalid-name)
+prepare.py:147:0: C0115: Missing class docstring (missing-class-docstring)
+prepare.py:153:4: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:153:4: R0914: Too many local variables (31/15) (too-many-locals)
+prepare.py:163:8: C0103: Variable name "CropWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:164:8: C0103: Variable name "CropHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:165:8: C0103: Variable name "ExpWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:166:8: C0103: Variable name "ExpHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:195:30: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:197:15: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+prepare.py:208:34: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:210:19: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+prepare.py:222:34: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:224:19: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+prepare.py:239:34: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:241:19: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+prepare.py:203:16: W0612: Unused variable 'i' (unused-variable)
+prepare.py:153:4: R0915: Too many statements (69/50) (too-many-statements)
+prepare.py:250:4: C0116: Missing function or method docstring (missing-function-docstring)
+prepare.py:250:4: R0914: Too many local variables (27/15) (too-many-locals)
+prepare.py:260:8: C0103: Variable name "CropWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:261:8: C0103: Variable name "CropHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:262:8: C0103: Variable name "ExpWidth" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:263:8: C0103: Variable name "ExpHeight" doesn't conform to snake_case naming style (invalid-name)
+prepare.py:268:19: R1714: Consider merging these comparisons with "in" to "item not in ('.DS_Store', 'README.md')" (consider-using-in)
+prepare.py:287:29: E1121: Too many positional arguments for method call (too-many-function-args)
+prepare.py:289:15: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+prepare.py:2:0: C0411: third party import "from PIL import Image, ImageOps" should be placed before "import cv2" (wrong-import-order)
+prepare.py:3:0: C0411: third party import "import numpy as np" should be placed before "import cv2" (wrong-import-order)
+prepare.py:4:0: C0411: standard import "import os" should be placed before "from PIL import Image, ImageOps" (wrong-import-order)
+prepare.py:5:0: C0411: standard import "import random" should be placed before "from PIL import Image, ImageOps" (wrong-import-order)
+prepare.py:6:0: C0411: third party import "from skimage import util, filters, morphology" should be placed before "import cv2" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 4.88/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>cd :
+The filename, directory name, or volume label syntax is incorrect.
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>cd ::
+The system cannot find the drive specified.
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>cd ::
+The system cannot find the drive specified.
+
+E:\dowloads\Group4\Project-Final\ML\Fingerprint-Varification>cd ..
+
+E:\dowloads\Group4\Project-Final\ML>cd Face-Verification
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification>pylint Face_Verification.py
+************* Module Face_Verification
+Face_Verification.py:5:41: C0303: Trailing whitespace (trailing-whitespace)
+Face_Verification.py:12:43: C0326: No space allowed around keyword argument assignment
+warnings.filterwarnings("ignore", category = FutureWarning)
+                                           ^ (bad-whitespace)
+Face_Verification.py:18:52: C0326: Exactly one space required after comma
+model = RESNET50(include_top=False, input_shape=(224,224,3),pooling='avg',
+                                                    ^ (bad-whitespace)
+Face_Verification.py:18:56: C0326: Exactly one space required after comma
+model = RESNET50(include_top=False, input_shape=(224,224,3),pooling='avg',
+                                                        ^ (bad-whitespace)
+Face_Verification.py:18:59: C0326: Exactly one space required after comma
+model = RESNET50(include_top=False, input_shape=(224,224,3),pooling='avg',
+                                                           ^ (bad-whitespace)
+Face_Verification.py:19:0: C0330: Wrong continued indentation (remove 7 spaces).
+                        weights=current_path + 'rcmalli_vggface_tf_notop_resnet50.h5')
+                 |      ^ (bad-continuation)
+Face_Verification.py:29:35: C0326: Exactly one space required after comma
+def extract_face(image, resize=(224,224)):
+                                   ^ (bad-whitespace)
+Face_Verification.py:30:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:32:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:33:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:34:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:36:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:37:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:37:39: C0326: Exactly one space required after comma
+  face_image = cv2.resize(face_boundary,resize)
+                                       ^ (bad-whitespace)
+Face_Verification.py:39:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:42:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:43:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:44:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:46:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:46:30: C0326: Exactly one space required after comma
+  score = cosine(embeddings[0],embeddings[1])
+                              ^ (bad-whitespace)
+Face_Verification.py:47:0: C0303: Trailing whitespace (trailing-whitespace)
+Face_Verification.py:48:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:49:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:50:0: W0311: Bad indentation. Found 4 spaces, expected 8 (bad-indentation)
+Face_Verification.py:52:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:59:0: C0330: Wrong hanging indentation (add 2 spaces).
+      'response':similar
+      ^ | (bad-continuation)
+Face_Verification.py:62:11: C0326: Exactly one space required around comparison
+if __name__=='__main__':
+           ^^ (bad-whitespace)
+Face_Verification.py:63:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+Face_Verification.py:1:0: C0103: Module name "Face_Verification" doesn't conform to snake_case naming style (invalid-name)
+Face_Verification.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+Face_Verification.py:55:0: W0622: Redefining built-in 'eval' (redefined-builtin)
+Face_Verification.py:2:0: E0401: Unable to import 'cv2' (import-error)
+Face_Verification.py:6:0: E0401: Unable to import 'tensorflow' (import-error)
+Face_Verification.py:14:0: C0103: Constant name "current_path" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:16:0: C0103: Constant name "app" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:17:0: C0103: Constant name "detector" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:18:0: C0103: Constant name "model" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:20:0: C0103: Constant name "file1" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:21:0: C0103: Constant name "file2" doesn't conform to UPPER_CASE naming style (invalid-name)
+Face_Verification.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+Face_Verification.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
+Face_Verification.py:33:2: C0103: Variable name "x1" doesn't conform to snake_case naming style (invalid-name)
+Face_Verification.py:33:6: C0103: Variable name "y1" doesn't conform to snake_case naming style (invalid-name)
+Face_Verification.py:34:2: C0103: Variable name "x2" doesn't conform to snake_case naming style (invalid-name)
+Face_Verification.py:34:6: C0103: Variable name "y2" doesn't conform to snake_case naming style (invalid-name)
+Face_Verification.py:41:0: C0116: Missing function or method docstring (missing-function-docstring)
+Face_Verification.py:55:0: C0116: Missing function or method docstring (missing-function-docstring)
+Face_Verification.py:6:0: W0611: Unused tensorflow imported as tf (unused-import)
+Face_Verification.py:3:0: C0411: third party import "import numpy as np" should be placed before "from mtcnn.mtcnn import MTCNN" (wrong-import-order)
+Face_Verification.py:5:0: C0411: third party import "from scipy.spatial.distance import cosine" should be placed before "from mtcnn.mtcnn import MTCNN" (wrong-import-order)
+Face_Verification.py:7:0: C0411: standard import "import warnings" should be placed before "import numpy as np" (wrong-import-order)
+Face_Verification.py:9:0: C0411: third party import "from flask import Flask" should be placed before "from mtcnn.mtcnn import MTCNN" (wrong-import-order)
+Face_Verification.py:10:0: C0411: standard import "import pathlib" should be placed before "import numpy as np" (wrong-import-order)
+
+------------------------------------
+Your code has been rated at -4.52/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification>pylint models.py
+************* Module models
+models.py:75:0: C0303: Trailing whitespace (trailing-whitespace)
+models.py:81:0: C0330: Wrong continued indentation (add 6 spaces).
+                                      default_size=224,
+                                      ^     | (bad-continuation)
+models.py:82:0: C0330: Wrong continued indentation (add 6 spaces).
+                                      min_size=32,
+                                      ^     | (bad-continuation)
+models.py:83:0: C0330: Wrong continued indentation (add 6 spaces).
+                                      data_format=K.image_data_format(),
+                                      ^     | (bad-continuation)
+models.py:84:0: C0330: Wrong continued indentation (add 6 spaces).
+                                      require_flatten=include_top,
+                                      ^     | (bad-continuation)
+models.py:85:0: C0330: Wrong continued indentation (add 6 spaces).
+                                      weights=weights)
+                                      ^     | (bad-continuation)
+models.py:144:0: C0304: Final newline missing (missing-final-newline)
+models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+models.py:1:0: E0401: Unable to import 'tensorflow.keras.layers' (import-error)
+models.py:4:0: E0401: Unable to import 'tensorflow.keras' (import-error)
+models.py:7:0: E0401: Unable to import 'tensorflow.keras.models' (import-error)
+models.py:8:0: E0401: Unable to import 'tensorflow.keras' (import-error)
+models.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
+models.py:11:0: R0913: Too many arguments (6/5) (too-many-arguments)
+models.py:23:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:25:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:26:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:28:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:30:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:31:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:33:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:34:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:36:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:37:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:41:0: C0116: Missing function or method docstring (missing-function-docstring)
+models.py:41:0: R0913: Too many arguments (7/5) (too-many-arguments)
+models.py:41:0: R0914: Too many local variables (17/15) (too-many-locals)
+models.py:54:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:56:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:57:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:59:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:61:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:62:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:64:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:65:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:72:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:73:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:76:0: C0103: Function name "RESNET50" doesn't conform to snake_case naming style (invalid-name)
+models.py:76:0: C0116: Missing function or method docstring (missing-function-docstring)
+models.py:76:0: R0913: Too many arguments (6/5) (too-many-arguments)
+models.py:80:18: W0212: Access to a protected member _obtain_input_shape of a client class (protected-access)
+models.py:99:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:102:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:103:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:104:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:106:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:107:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:108:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:110:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:111:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:112:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:113:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:115:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:116:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:117:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:118:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:119:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:120:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:122:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:123:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:124:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:126:4: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:129:8: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:130:8: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:133:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:135:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+models.py:6:0: W0611: Unused import warnings (unused-import)
+models.py:6:0: C0411: standard import "import warnings" should be placed before "from tensorflow.keras.layers import Flatten, Dense, Input, GlobalAveragePooling2D, GlobalMaxPooling2D, Activation, Conv2D, MaxPooling2D, BatchNormalization, AveragePooling2D" (wrong-import-order)
+models.py:7:0: C0412: Imports from package tensorflow are not grouped (ungrouped-imports)
+
+-----------------------------------
+Your code has been rated at 0.56/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification>pylint utils.py
+************* Module utils
+utils.py:99:0: C0330: Wrong continued indentation before block.
+                   (input_shape[2] is not None and input_shape[2] < min_size)):
+                   ^|   | (bad-continuation)
+utils.py:113:0: C0330: Wrong continued indentation before block.
+                   (input_shape[1] is not None and input_shape[1] < min_size)):
+                   ^|   | (bad-continuation)
+utils.py:131:0: C0304: Final newline missing (missing-final-newline)
+utils.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+utils.py:2:0: E0401: Unable to import 'tensorflow.keras' (import-error)
+utils.py:4:0: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+utils.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+utils.py:38:0: R0913: Too many arguments (6/5) (too-many-arguments)
+utils.py:64:16: E0602: Undefined variable 'warnings' (undefined-variable)
+utils.py:71:16: E0602: Undefined variable 'warnings' (undefined-variable)
+utils.py:38:0: R0912: Too many branches (25/12) (too-many-branches)
+
+-----------------------------------
+Your code has been rated at 6.76/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification>cd mtcnn
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn>pylint _init_.py
+************* Module _init_.py
+_init_.py:1:0: F0001: No module named _init_.py (fatal)
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn>pylint __init__.py
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn>pylint __init__.py
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn>pylint mtcnn.py
+************* Module mtcnn.mtcnn
+mtcnn.py:50:0: C0301: Line too long (114/100) (line-too-long)
+mtcnn.py:67:0: C0301: Line too long (103/100) (line-too-long)
+mtcnn.py:71:0: C0301: Line too long (117/100) (line-too-long)
+mtcnn.py:87:0: C0301: Line too long (102/100) (line-too-long)
+mtcnn.py:348:0: C0301: Line too long (109/100) (line-too-long)
+mtcnn.py:374:0: C0301: Line too long (105/100) (line-too-long)
+mtcnn.py:398:0: C0301: Line too long (110/100) (line-too-long)
+mtcnn.py:399:0: C0301: Line too long (106/100) (line-too-long)
+mtcnn.py:419:0: C0301: Line too long (108/100) (line-too-long)
+mtcnn.py:446:0: C0301: Line too long (101/100) (line-too-long)
+mtcnn.py:479:0: C0301: Line too long (108/100) (line-too-long)
+mtcnn.py:486:0: C0301: Line too long (101/100) (line-too-long)
+mtcnn.py:487:0: C0301: Line too long (103/100) (line-too-long)
+mtcnn.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+mtcnn.py:32:0: E0401: Unable to import 'cv2' (import-error)
+mtcnn.py:50:8: C0103: Attribute name "dy" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:50:29: C0103: Attribute name "dx" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:50:50: C0103: Attribute name "y" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:50:59: C0103: Attribute name "ey" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:50:69: C0103: Attribute name "x" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:42:0: R0205: Class 'StageStatus' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+mtcnn.py:42:0: R0902: Too many instance attributes (12/7) (too-many-instance-attributes)
+mtcnn.py:55:4: C0116: Missing function or method docstring (missing-function-docstring)
+mtcnn.py:56:8: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:42:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+mtcnn.py:60:0: R0205: Class 'MTCNN' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+mtcnn.py:90:4: C0116: Missing function or method docstring (missing-function-docstring)
+mtcnn.py:100:4: C0103: Argument name "m" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:132:4: C0103: Argument name "t" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:132:4: R0914: Too many local variables (17/15) (too-many-locals)
+mtcnn.py:144:8: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:144:11: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:158:8: C0103: Variable name "bb" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:160:8: C0103: Variable name "q1" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:161:8: C0103: Variable name "q2" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:167:4: R0914: Too many local variables (22/15) (too-many-locals)
+mtcnn.py:179:8: C0103: Variable name "x1" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:180:8: C0103: Variable name "y1" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:181:8: C0103: Variable name "x2" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:182:8: C0103: Variable name "y2" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:183:8: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:201:12: C0103: Variable name "w" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:202:12: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:206:15: R0123: Comparison to literal (literal-comparison)
+mtcnn.py:207:16: C0103: Variable name "o" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:209:16: C0103: Variable name "o" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:218:4: C0103: Argument name "w" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:218:4: C0103: Argument name "h" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:224:8: C0103: Variable name "dx" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:225:8: C0103: Variable name "dy" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:229:8: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:230:8: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:232:8: C0103: Variable name "ey" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:243:8: E1137: 'dx.flat' does not support item assignment (unsupported-assignment-operation)
+mtcnn.py:247:8: E1137: 'dy.flat' does not support item assignment (unsupported-assignment-operation)
+mtcnn.py:269:8: C0103: Variable name "w" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:270:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:271:8: C0103: Variable name "b1" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:272:8: C0103: Variable name "b2" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:273:8: C0103: Variable name "b3" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:274:8: C0103: Variable name "b4" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:278:4: R0914: Too many local variables (19/15) (too-many-locals)
+mtcnn.py:290:8: C0103: Variable name "m" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:307:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:308:12: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:325:4: R0914: Too many local variables (23/15) (too-many-locals)
+mtcnn.py:379:4: R0914: Too many local variables (16/15) (too-many-locals)
+mtcnn.py:401:15: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:401:36: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:401:56: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:401:78: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:421:8: C0103: Variable name "mv" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:431:4: R0914: Too many local variables (21/15) (too-many-locals)
+mtcnn.py:458:15: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:458:36: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:458:56: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:458:78: E1136: Value 'tmp.shape' is unsubscriptable (unsubscriptable-object)
+mtcnn.py:481:8: C0103: Variable name "mv" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:483:8: C0103: Variable name "w" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:484:8: C0103: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
+mtcnn.py:33:0: C0411: third party import "import numpy as np" should be placed before "import cv2" (wrong-import-order)
+mtcnn.py:34:0: C0411: third party import "import pkg_resources" should be placed before "import cv2" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 5.10/10
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn>cd exceptions
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn\exceptions>pylint __init__.py
+************* Module mtcnn.exceptions
+__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn\exceptions>pylint invalid_image.py
+************* Module mtcnn.exceptions.invalid_image
+invalid_image.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+invalid_image.py:29:0: C0115: Missing class docstring (missing-class-docstring)
+
+-----------------------------------
+Your code has been rated at 3.33/10
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn\network>pylint __init__.py
+
+E:\dowloads\Group4\Project-Final\ML\Face-Verification\mtcnn\network>pylint factory.py
+************* Module mtcnn.network.factory
+factory.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+factory.py:26:0: E0401: Unable to import 'tensorflow.keras.layers' (import-error)
+factory.py:27:0: E0401: Unable to import 'tensorflow.keras.models' (import-error)
+factory.py:32:0: C0115: Missing class docstring (missing-class-docstring)
+factory.py:34:4: C0116: Missing function or method docstring (missing-function-docstring)
+factory.py:34:4: R0201: Method could be a function (no-self-use)
+factory.py:59:4: C0116: Missing function or method docstring (missing-function-docstring)
+factory.py:59:4: R0201: Method could be a function (no-self-use)
+factory.py:88:4: C0116: Missing function or method docstring (missing-function-docstring)
+factory.py:88:4: R0201: Method could be a function (no-self-use)
+factory.py:120:4: C0103: Method name "build_P_R_O_nets_from_file" doesn't conform to snake_case naming style (invalid-name)
+factory.py:120:4: C0116: Missing function or method docstring (missing-function-docstring)
+factory.py:29:0: C0411: third party import "import numpy as np" should be placed before "from tensorflow.keras.layers import Input, Dense, Conv2D, MaxPooling2D, PReLU, Flatten, Softmax" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 7.12/10
