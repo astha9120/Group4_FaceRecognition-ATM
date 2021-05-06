@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM | PROFILE</title>
+    <link href="new/css/all.css" rel="stylesheet" />
+    <link href="profile.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+   $('#content').load("navbar.html");
+
+});
+</script>
+  </head>
+  <body>
+    <header class="show">
+      <h1>
+        <big><b> Bank Name</b></big>
+      </h1>
+    </header>
+
+    <div id="content"></div>
+
+    <div class="main">
+      <div class="profileBox">
+        <div class="leftnav">
+          <nav class="sidebar">
+            <a onclick="tabs(0)" href="#" class="tab active">
+              <i class="fa fa-user"></i>
+            </a>
+            <a onclick="tabs(1)" href="#" class="tab">
+              <i class="fa fa-credit-card"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="rightbox">
+          <div class="profile tabShow">
+            <h1>Personal Information</h1>
+            <h3>Full Name</h3>
+            <input type="text" class="input" placeholder="first-last-name" />
+            <h3>Date of Birth</h3>
+            <input type="date" class="input" />
+            <h3>Email-id</h3>
+            <input type="email" class="input" placeholder="email@blank.com" />
+            <h3>Phone Number</h3>
+            <input type="number" class="input" placeholder="+1234567" />
+            <h3>Address</h3>
+            <input
+              type="text"
+              class="input"
+              placeholder="building, street, area"
+            />
+            <div class="box">
+              <button class="btn">Update</button>
+            </div>
+          </div>
+          <div class="accountInfo tabShow">
+            <h1>Account Information</h1>
+            <h3>Branch</h3>
+            <input
+              type="text"
+              class="input"
+              placeholder="branch-of-bank"
+              id="num" 
+              disabled
+            />
+            <h3>Pan-ID</h3>
+            <input type="number" class="input" id="num" placeholder="1234567" disabled />
+            <h3>Primary Account Number</h3>
+            <input type="number" class="input"id="num"  placeholder="1234567" disabled />
+            <h3>Secondary Account Number</h3>
+            <input type="number" class="input" id="num" placeholder="1234567" disabled />
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tabBtn = document.querySelectorAll(".tab");
+      const tab = document.querySelectorAll(".tabShow");
+
+      function tabs(panelIndex) {
+        tab.forEach(function (node) {
+          node.style.display = "none";
+        });
+        tab[panelIndex].style.display = "block";
+      }
+      tabs(0);
+    </script>
+    <script>
+      $(".tab").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+  </body>
+</html>

@@ -5,30 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATM | CHECKBOOK RENEWAL CONFIRM</title>
-    <link rel="stylesheet" href="checkbook_confirm.css"/>
+    <link rel="stylesheet" href="/checkbook_confirm.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-   
-   $('#content').load("navbar.html");
-
-});
-</script>
   </head>
   <body>
     <header class="show">
       <h1>
-        <big><b> Bank Name</b></big>
+        <big><b> ATM Name</b></big>
       </h1>
     </header>
 
+    <%- include('./partials/navbar.ejs') %>
 
     <div id="content"></div>
 
 
     <div class="main">
-      <h3 id="conformation">Your checkbook will be send to you on your following address : </h3>
-      <input type="text" name="address" id="addr" disabled>
+      <h3 id="conformation">Your chequebook will be send to you on your following address : </h3>
+      <input type="text" class="msg" name="address" value = "<%=address%>" id="addr" disabled>
     </div>
   </body>
 </html>
