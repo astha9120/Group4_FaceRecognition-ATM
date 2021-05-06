@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM | TRANSFER MONEY</title>
+  <link rel="stylesheet" href="/Transfer_money.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('#content').load("navbar.html");
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="show">
+    <h1>
+      <big><b> Bank Name</b></big>
+    </h1>
+  </header>
+  <%- include('./partials/navbar.ejs')%>
+    <div id="content"></div>
+    <div class="main">
+      <form action="/transfermoney" method="POST">
+        <h1 class="heading"><b><big> TRANSFER MONEY </big> </b> </h1>
+        <div class="main1">
+          <p class="part1">Enter The Account Number: <input type="number" placeholder="Enter 16 digit AC number"
+              name="acnumber" id="number" pattern="[0-9]{16}" required></p>
+        </div>
+        <div class="main1">
+          <p class="part1">Enter The Amount: <input type="number" name="number" id="number" max="10000" min="100"
+              required></p>
+        </div>
+
+        <div class="page1">
+          <p>
+            Select Account
+            <select name="transfer" id="transfer">
+              <option value="PRIMARY ACCOUNT">Primary</option>
+              <option value="SAVING ACCOUNT">Saving</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="sub">
+          <input type="submit" value="Transfer" class="submit">
+        </div>
+
+      </form>
+    </div>
+
+</body>
+
+</html>
