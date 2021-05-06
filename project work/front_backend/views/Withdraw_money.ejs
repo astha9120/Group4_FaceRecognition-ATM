@@ -5,26 +5,39 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATM | Withdraw Money</title>
+  <title>ATM | WITHDRAW MONEY</title>
   <link rel="stylesheet" href="/Withdraw_money.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("form").submit(function(){
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("form").submit(function () {
+        var primary_balance = Number('<%= pbalance %>');
+        var saving_balance = Number('<%= sbalance %>');
+        var cash = Number('<%= cash %>');
+        var debit = document.getElementById("number").value;
+        var ac = document.getElementById("transfer").value;
+        if (ac == "PRIMARY ACCOUNT") {
+          if (debit <= primary_balance && debit <= cash) {
+            alert("Transaction Successful!!\nPlease collect your cash");
+          }
+        }
+        else {
+          if (debit <= saving_balance && debit <= cash) {
+            alert("Transaction Successful!!\nPlease collect your cash");
+          }
+        }
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
 
-alert("Success!!\nMoney has been withdrawn")
-  });
-});
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-   
-   $('#content').load("navbar.html");
+      $('#content').load("navbar.html");
 
-});
-</script>
+    });
+  </script>
 </head>
 
 <body>
@@ -33,26 +46,32 @@ $(document).ready(function(){
       <big><b> Bank Name</b></big>
     </h1>
   </header>
-  <div id="content"></div>
-  
   <%- include('./partials/navbar.ejs')%>
+    <div id="content"></div>
+    <div class="main">
+      <form action="/withdrawmoney" method="POST">
+        <h1 class="heading"><b><big> WITHDRAW MONEY </big> </b> </h1>
+        <div class="main1">
+          <p class="part1">Enter The Amount: <input type="number" name="number" id="number" max="10000" min="100"
+              required></p>
 
-  <div class="main">
-    <form action="/clients/withdrawmoney" method="POST">
-      <h1 class="heading"><b><big> WITHDRAW MONEY </big> </b> </h1>
-      <div class="main1">
-        <p class="part1">ENTER THE AMOUNT: <input type="number" name="number" id="number" max="10000" min="100" required></p>
+        </div>
+        <div class="page1">
+          <p>
+            Select Account
+            <select name="transfer" id="transfer">
+              <option value="PRIMARY ACCOUNT">Primary</option>
+              <option value="SAVING ACCOUNT">Saving</option>
+            </select>
+          </p>
+        </div>
+        <div class="sub">
+          <input type="submit" value="Withdraw" class="submit">
+        </div>
 
-      </div>
-      <div class="sub">
+      </form>
+    </div>
 
-        <input type="submit" value="PRIMARY ACCOUNT" class="submit" >
-        <input type="submit" value="SAVING ACCOUNT" class="submit" >
-      </div>
-
-  </form>
-  </div>
- 
 </body>
 
 </html>
