@@ -1,0 +1,178 @@
+
+
+
+
+
+
+  header h1 {
+    text-align: right;
+    padding: 30px;
+    font-size: 20px;
+    font-size: 50px;
+    margin: 0mm;
+    border-radius: 10px;
+    
+  }
+
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .show{
+    background-image: url(./images/16.png);
+    background-size:contain;
+      background-repeat: no-repeat;
+     margin-left: 10px;
+  }
+  body {
+    
+  height: 100vh;
+  width: 100%;
+background-image: url(./images/cool13.jpg);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flexbox;
+    
+  }
+
+
+p{
+  font-size: 30px;
+  font-weight: bold;
+}
+  .bank {
+    background-color: black;
+    overflow: hidden;
+    margin: 0mm;
+    border: 0ch;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .m{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+}
+
+#num{
+
+  font-weight: bold;
+  height: 60px;
+  font-size: 35px;
+  padding: 0px;
+  width: 25vw;
+  height: 75px;
+  margin: 0px;
+  text-align: center;
+  color: rgb(58, 54, 54);
+  
+  background-color:rgba(245, 245, 245, 0.808);
+ padding: 0%;
+  border: 1px solid white;
+  bottom: 0px;
+}
+#num1{
+  font-weight: bold;
+  height: 60px;
+  font-size: 35px;
+  padding: 0px;
+  width: 15vw;
+  height: 75px;
+  margin: 0px;
+  text-align: center;
+  color: rgb(58, 54, 54);
+  
+  background-color:transparent;
+ padding: 0%;
+  border: 1px solid transparent;
+  bottom: 0px;
+}
+.part1{
+  text-align: center;
+  
+  width: 25vw;
+  margin-left: 50px;
+  
+  padding: 0%;
+}
+.part2{
+  text-align: center;
+  margin-top: 75px;
+  width: 25vw;
+  margin-left: 50px;
+}
+.hello{
+  background-color: black;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  border: 1px solid black;
+ height: 50px;
+ text-align: center;
+}
+.main1{
+   
+ display: flex;
+ flex-direction: column;
+ 
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25vw;
+    height: 30px;
+}
+.m1{
+  margin-top: 150px;
+  
+  margin-left: 100px;
+  margin-right: 50px;
+  left: 0px;
+}
+.m2{
+  margin-top: 75px;
+}
+.main2{
+
+
+font-size: 28px;
+  text-align: center;
+margin-left: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+  .main {
+
+    
+    height: 65vh;
+    box-sizing: border-box;
+    position: relative;
+    align-items:flex-start;
+    display:flex;
+    
+    margin:auto;
+    text-align: left;
+    padding: 0px;
+
+  }
+  
+ 
+  .heading{
+      display: flex;
+    justify-content:center;
+      text-align: center;
+      font-size: 40px;
+      color: black;
+    }
+  
+
+
+  
+
+
+  
