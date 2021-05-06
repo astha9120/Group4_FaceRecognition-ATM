@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM | SUCCESSFUL</title>
+  <link href="new/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/Transfer_successful.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+
+      $('#content').load("navbar.html");
+
+    });
+  </script> -->
+</head>
+
+<body>
+  <header class="show">
+    <h1>
+      <big><b> ATM Name</b></big>
+    </h1>
+  </header>
+    <div id="content"></div>
+    <div class="Heading">Your Transfer Was Succesful!</div>
+    <div class="amount">
+      <div>Amount Transfered : <i class="fas fa-rupee-sign" id="rupee"></i> </div><input type="number"
+        name="transfer_amount" value="<%= transfer_amount %>" disabled>
+    </div>
+    </div>
+    <!-- <div id="image"><img id="rupee"src="rupee_1.png" alt="rupee_symbol"> -->
+    <div class="transffred_from">
+      <div>Transfered By : <input type="text" name="form_name" value="<%= transfer_fromname %>" disabled></div>
+      <div>From Account No. : <input type="text" name="from_account" value="<%= transfer_fromaccount_number %>" disabled></div>
+    </div>
+    <div class="transffred_to">
+      <div>Transfered To : <input type="text" name="to_name" value="<%= transfer_toname %>" disabled></div>
+      <div>On Account No. : <input type="text" name="to_account" value="<%= transfer_toaccount_number %>" disabled></div>
+    </div>
+    <div class="sub">
+
+
+      <a href="/" class="submit">Back To Main Page</a>
+    </div>
+    <!-- <div class="main">
+      <!-- <div class="balance">
+        <h2 id="balance_heading">ACCOUNT BALANCE</h2>
+      </div>
+      <div class="accounts">
+        <div class="Primary_Account">
+          <h4 class="pah">Primary Account</h4>
+          <div id="pan_text">Account No. : <input type="text" name="primary_acc_no" id="pan"></div>
+          <div id="pab_text">Balance : <input type="text" name="primary_acc_bal" id="pab"></div>
+        </div>
+        <div class="Saving_Account">
+          <h4 class="sah">Saving Account</h4>
+          <div id="san_text">Account No. : <input type="text" name="saving_acc_no" id="san"></div>
+          <div id="sab_text">Balance : <input type="text" name="saving_acc_bal" id="sab"></div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+ header h1 {
+  text-align: right;
+  padding: 30px 30px 30px 30px;
+  font-size: 20px;
+  font-size: 50px;
+  margin: 0mm;
+  border-radius: 10px;
+ 
+  color: black;
+}
+.sub{
+  display: flex;
+  justify-content: space-evenly;
+  
+ 
+}
+
+.submit{
+text-align: center;
+text-decoration: none;
+background-color: black;
+padding: 10px 10px 10px 10px;
+margin-top: 25px;
+width: 10%;
+color: white;
+font-size: 20px;
+border-radius: 10px;
+cursor: pointer;
+border: 1px solid white;
+font-weight: bold;
+}
+
+.submit:hover{
+background-color: rgb(210 193 193 / 80%);
+color: black;
+border: 1px solid black;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.show{
+  background-image: url(16.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+body {
+ 
+  height: 100vh;
+  width: 100%;
+background-image: url(cool13.jpg);
+background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bank {
+  background-color: black;
+  overflow: hidden;
+  margin: 0mm;
+  border: 0ch;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* .main {
+    box-shadow: 0px 0px 10px 0px rgb(101 141 143 / 67%);
+    background-color: rgb(0 0 0 / 70%);
+    width: 70vw;
+    height: 65vh;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin:auto auto;
+    display: flex;
+    flex-direction: row; 
+} */
+
+.Heading {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 30px;
+  height: 40px;
+  color: green;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+  font-size: 30px;
+  height: 50px;
+  font-weight: 700;
+  padding: 30px 30px;
+  margin-right: 3000px;
+}
+
+#image {
+  display: inline-block;
+}
+
+#rupee {
+  width: 50px;
+  font-weight: 900;
+  height: 35px;
+}
+
+input[type=number] {
+  width: 220px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+}
+
+input[type=text] {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  color: white
+}
+
+.transffred_from {
+  /* background-color: yellow; */
+  height: 60px;
+  width: 100vw;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.transffred_to {
+  /* background-color: yellow; */
+  height: 60px;
+  width: 100vw;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.back_home {
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 38px;
+}
+
+#back_to_home {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 180px;
+  height: 45px;
+  font-size: 18px;
+}
+/* .balance {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: yellow;
+  font-weight: 700;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Primary_Account, .Saving_Account {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40vh;
+  width: 30vw;
+  margin-bottom: 20px;
+}
+
+.pah, .sah {
+  background-color: greenyellow;
+  padding: 7px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#sab_text, #pab_text {
+  background-color: hotpink; 
+  padding: 10px;
+  margin-left: 70px;
+  width: 20vw;
+  font-size: 20px;
+}
+*/
+
+/* #pan_text, #san_text {
+  background-color: khaki;
+  padding: 10px;
+  margin-left: 27px;
+  font-size: 20px;
+}  */

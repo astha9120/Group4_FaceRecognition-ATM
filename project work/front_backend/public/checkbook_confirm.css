@@ -1,5 +1,3 @@
-
-  
   header h1 {
     text-align: right;
     padding: 30px;
@@ -14,15 +12,22 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
   
+  .show{
+    background-image: url(16.png);
+    background-size:contain;
+      background-repeat: no-repeat;
+     margin-left: 10px;
+  }
   body {
-    content: "";
-    height: 100vh;
-    width: 100%;
-    background-image: url(cool1.png);
-    background-size: cover;
+    
+  height: 100vh;
+  width: 100%;
+background-image: url(cool13.jpg);
+background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
+    display:flexbox;
+    
   }
   
  .bank {
@@ -39,20 +44,19 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0px 0px 10px 0px rgb(101 141 143 / 67%);
-    background-color:rgba(0,0,0, 0.7);
+
     width: 70vw;
     height: 65vh;
     box-sizing: border-box;
     position: relative;
-    border-radius: 20px;
-    border: 1px solid black;
+
     margin:auto;
   }
 
   #conformation {
     font-size: 35px;
-    color: white;
+    color: black;
+    margin-bottom: 0ch;
   }
 
   #addr {
@@ -60,10 +64,13 @@
     height: 50%;
     box-sizing: border-box;
     margin-left: 15vw;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top: 0%;
+    border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(210 193 193 / 70%);;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
   }
   
 
-  

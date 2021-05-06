@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM | CHECKBOOK RENEWAL</title>
+    <link rel="stylesheet" href="/checkbook_home.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    function alertAddress() {
+         swal('Checkbook will send to your address : ' + '<%=address%>');
+       }
+    </script>
+  </head>
+  <body>
+    <header class="show">
+      <h1>
+        <big><b> Bank Name</b></big>
+      </h1>
+    </header>
+    <%- include('./partials/navbar.ejs') %>
+    <div id="content"></div>
+
+    <div class="main">
+      <h3 id="conformation">Do you want to renew your checkbook?</h3>
+      <div class="btn">
+        <input type="button" onclick="alertAddress()" value="Yes" class="confirm_btn">
+        <input type="button" value="No" class="confirm_btn">
+    </div>
+    </div>
+  </body>
+</html>

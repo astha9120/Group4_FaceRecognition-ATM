@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM | HOME</title>
+  <link rel="stylesheet" href="home.css" />
+  <link href="new/css/all.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+   $('#content').load("navbar.html");
+
+});
+</script>
+</head>
+
+<body>
+  <header class="show">
+    <h1>
+      <big><b> Bank Name</b></big>
+    </h1>
+  </header>
+
+  <div id="content"></div>
+  <div class="main">
+    <form action="">
+        <div class="m">
+
+            
+            <div class="main2">
+                <div class="m1"><i class="fas fa-landmark fa-8x" ></i></div>
+                <div class="m2">
+                    <h1>Welcome</h1>
+                    <h1>To</h1>
+                    <h1>ATM</h1>
+                </div>
+             
+              
+              </div >
+            <div class="main1">
+                <div class="part1">
+                    <p class="hello"> Primary Balance </p>
+                    <div id="num"><i class="fas fa-rupee-sign"></i><input type="number" name="number" id="num1" placeholder="12000" disabled ></div>
+                    
+                    
+                </div>
+                <div class="part2">
+                    <p class="hello">Saving Balance </p>
+                    <div id="num"><i class="fas fa-rupee-sign"></i><input type="number" name="number" id="num1" placeholder="12000" disabled ></div>
+                    
+                </div>
+
+            </div>
+        </div>
+  </form>
+  </div>
+ 
+</body>
+
+</html>
